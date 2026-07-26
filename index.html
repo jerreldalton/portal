@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JERREL</title>
+    <style>
+        :root {
+            --bg: #000000;
+            --text: #e0e0e0;
+            --accent: #ffffff;
+            --muted: #555555;
+            --border: #222222;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 24px;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 0.25em;
+            color: var(--accent);
+            text-transform: uppercase;
+        }
+
+        .visual {
+            width: 100%;
+            height: 350px;
+            background-color: #111;
+            border: 1px solid var(--border);
+            object-fit: cover;
+            filter: grayscale(100%);
+        }
+
+        .statement {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #aaaaaa;
+            font-weight: 300;
+        }
+
+        .statement strong {
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        .gateway {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .gateway input {
+            background: transparent;
+            border: 1px solid var(--border);
+            padding: 14px 16px;
+            color: var(--accent);
+            font-size: 0.9rem;
+            outline: none;
+            transition: border-color 0.2s ease;
+        }
+
+        .gateway input:focus {
+            border-color: var(--accent);
+        }
+
+        .gateway button {
+            background: var(--accent);
+            color: var(--bg);
+            border: none;
+            padding: 14px 16px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+        }
+
+        .gateway button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Jerrel</h1>
+        </div>
+
+        <!-- Replace 'image.jpg' with your photo URL -->
+        <img src="https://via.placeholder.com/500x350/111111/555555?text=FRAME" alt="Presence" class="visual">
+
+        <div class="statement">
+            I build, execute, and keep my circle small. I don't waste time on noise, dry energy, or games. <strong>If you have the confidence to step into my space, state who you are.</strong>
+        </div>
+
+        <form class="gateway" action="https://formsubmit.co/jerreldalton@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="YOUR NAME" required>
+            <input type="text" name="contact" placeholder="PHONE OR INSTAGRAM" required>
+            <button type="submit">INITIATE</button>
+        </form>
+    </div>
+
+</body>
+</html>
