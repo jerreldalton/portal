@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jerrel</title>
-    <style>.social-handles {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    width: 100%;
+   <style>
+.social-handles {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
     font-weight: 600;
     font-size: 13px;
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
+
 
 .social-handles .ig { color: #E1306C; }
 .social-handles .x { color: #FFFFFF; }
@@ -158,6 +158,18 @@
     
     <!-- Audio Toggle Button -->
     <button id="mute-btn" onclick="toggleAudio()">🔊 UNMUTE</button>
+<!-- Video / Audio Controls above -->
+
+<div class="social-handles">
+    <span class="ig">@1superstarhere</span>
+    <span class="x">@1superstarhere</span>
+    <span class="tt">@1superstarhere</span>
+    <span class="fb">@Jerrel Dalton</span>
+    <span class="snap">@jerrelboulevard</span>
+    <span class="cash">$jerreldalton</span>
+</div>
+
+</div> <!-- Closes .container -->
 </div>
 
 <!-- Audio Toggle Script -->
@@ -174,14 +186,7 @@
       btn.innerText = "🔊 UNMUTE";
     }
   }
-</script>
-<div class="social-handles">
-    <span class="ig">@1superstarhere</span>
-    <span class="x">@1superstarhere</span>
-    <span class="tt">@1superstarhere</span>
-    <span class="fb">@Jerrel Dalton</span>
-    <span class="snap">@jerrelboulevard</span>
-    <span class="cash">$jerreldalton</span>
+
 </div>
 </body>
 </html>
